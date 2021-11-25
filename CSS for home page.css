@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: grey;
 }
 
 .Header-buttons{
@@ -8,18 +8,16 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 66px;
+    align-items: center;
 }
 
 .circle{
     height:113px;
     width: 113px;
-    left: 27px;
-    right: 16px;
     margin: 8px;
     background-color: yellow;
     border-radius: 50%;
-    display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,13 +25,10 @@ body{
 
 .dropdown{ 
     display: inline-block;
-    position: relative;
-    top: 40px;
 }
 
 .button{
     background-color: #04AA6D;
-    width: 186px;
     border-radius: 10px;
     padding: 16px;
     font-size: 16px;
@@ -44,31 +39,22 @@ body{
 
 .buttons{
     position: relative;
-    top: 40px;
     left: 5px;
 }
 
-.Booking-container{
-    background-color: green;
-}
 
 .Booking{
-    position: relative;
-    top: 55px;
-    background-color: green;
-    border: none;
-}
-
-.Booking-btn{
+    width: 100%;
     background-color: #04AA6D;
-    width: 186px;
+    border: none;
     border-radius: 50px;
     padding: 16px;
     font-size: 16px;
     border: none;
-    text-decoration: none;   
+    text-decoration: none;
     color: black;
 }
+
    
 .dropdown-content{
     display: none;
@@ -90,7 +76,11 @@ body{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .button {background-color: #3e8e41;}
+
+.buttons:hover .button {background-color: #3e8e41;}
+
+.Booking-container:hover .Booking {background-color: #3e8e41;}
 
 .PG-name-container{
     background-color: blue;
@@ -109,14 +99,12 @@ body{
     width: 1247px;
     height: 510px;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 .about-page{
     width: 1247px;

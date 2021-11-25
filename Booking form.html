@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ASG: Home Page</title>
+    <link href = "CSS for home page.css" rel = "stylesheet">
+    <link href = "CSS for parks.css" rel = "stylesheet">
+    <link href = "CSS for form.css" rel = "stylesheet">
+  </head>
+  
+  <body>
+    <nav class = "Header-buttons">
+        <span class = "circle">
+            <a style = "text-decoration: none;" href = "index.html">GW logo</a>
+        </span>
+        <div class = "PG-name-container">
+            <h1 class = "PG-name">Bird Park</h1>
+        </div>       
+        <div class = "dropdown">
+            <button class = "button">Parks + </button>
+            <div class = "dropdown-content">
+                <a href = "Zoological Park.html">Zoo</a>
+                <a href = "River Safari.html">River Safari</a>
+                <a href = "Bird Park.html">Bird Park</a>
+            </div>
+        </div>
+        <div class = "buttons">
+            <button class = "button">
+                <a class = "button" href = "Things to do.html">Activities</a>               
+            </button>           
+        </div>
+        <div class = "buttons">
+            <button class = "button">
+                <a class = "button" href = "#">Plan your visit</a> 
+            </button>
+        </div>
+        <div class = "Booking-container">
+            <button class = "Booking">
+                <a class = "Booking" href = "Booking form.html">Book Now</a> 
+            </button>
+        </div>
+    </nav>
+
+    <form class = "form-container" action = "index.html" method = "get">
+        <div class = "forms-header">
+            <h1>Head on to out wonderful parks by booking now!!!</h1>
+        </div>
+
+        <div class = "form-info">
+            <label for = "name">Name (As in NRIC):</label><br>
+            <input type = "text" id="name" name="name" placeholder = "Tan Kim Kim" required><br>
+
+            <label for = "parkChoice">Select your park: </label><br>
+            <select name = "choice" id = "choice" required>
+                <option value = "test">Select your park</option>
+                <option value = "Zoological Park">Zoological Park</option>
+                <option value = "River Safari">River Safari</option>
+                <option value = "Bird Park">Bird Park</option>
+            </select><br>
+
+            <label for = "Number">Contact Number: </label><br>
+            <input type = "text" id="contactNo" name="Number" placeholder = "12345678" required><br>
+
+            <label for = "adults">Number of adults: </label><br>           
+            <input type = "text" id="adults" name="adults" placeholder = "4" required><br>
+
+            <label for = "children">Number of children: </label><br>
+            <input type = "text" id="children" name="children" placeholder = "5" required><br>
+
+            <label for = "elderly">Number of elderly: </label><br>
+            <input type = "text" id="elderly" name="elderly" placeholder = "6" required><br>
+
+            <label for = "Date">Select Date:</label><br>
+            <input type = "date" id="Date" name="Date" value = "2021-12-01" min = "2021-12-01" 
+            max = "2022-02-31" required><br>
+
+            <label for = "time">Choose your preferred time:</label><br>
+            <input type = "time" id="time" name="time" 
+            value = "10:00" min = "10:00" max = "21:00" required><br>
+            
+            <div class = "submit-container">
+                <input class = "submit-button" type = "submit" value = "Submit">
+            </div>
+            
+        </div>
+    </form>
+
+    <footer class = "copyright">
+        <p>
+            © Copyright 2021, Wildlife Reserves For Animals. All Rights Reserved.
+
+            Wildlife Reserve For Animals, River Safari, Zoological Gardens and
+            Bird Park are copyrighted by and/or trade marks of Koh Jun Hao 
+            Griffin (and/or its affiliate(s)) in Singapore and/or other countries, as
+            the case may be.
+            Terms & Conditions Privacy Policy Data Protection Policy
+        </p>
+    </footer>
+
+  </body>

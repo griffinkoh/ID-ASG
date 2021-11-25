@@ -1,0 +1,151 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.discover-button{
+    position: relative;
+    left: 5px;
+    bottom: 50px;
+}
+
+.discover-button:hover .button{
+    background: #3e8e41;
+}
+
+
+.RiverInfo{
+    height: 264px;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    padding-left: 45px;
+    padding-top: 96px;
+}
+
+.about{
+    width: 600px;
+    position: relative;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.vertical-line{
+    width: 30px;
+    height: 235px;
+    background-color: aqua;
+    display: block; 
+    position: relative;
+    left: 25px;
+    bottom: 42px;
+}
+
+.info{
+    margin: 40px;
+    position: relative;
+    bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.adventure{
+    width: 1247px;
+    height: 700px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.adventure-container{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    position: relative;
+}
+
+.events{
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    background-color: cornsilk;
+    font-size: 30px; 
+    margin: 65px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconic-header{
+    width: 1247px;
+    height: 80px;    
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+.showcase-animal{
+    width: 1247px;
+    height: 1000px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.display-container{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    left: 50px;    
+}
+
+.display{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.centered {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.display-container:hover .display {
+    opacity: 0.3;
+}
+  
+.display-container:hover .centered {
+    opacity: 1;
+}
+
+.hover-text{
+    background-color: grey;
+    color: white;
+    font-size: 15px;
+    padding: 16px 32px;
+}
+
+
+.double-button{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+

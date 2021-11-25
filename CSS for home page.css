@@ -160,10 +160,7 @@ body{
 }
 
 .fun-fact-text{
-    list-style: none;
-    position: relative;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 

@@ -461,5 +461,7 @@ nav ul ul ul li{
 
     .copyright{
         width: 567px;
+        height: 160px;
+        text-align: center;
     }
 }

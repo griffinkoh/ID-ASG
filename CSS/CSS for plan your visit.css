@@ -87,7 +87,29 @@ html{
     padding: 0;
 }
 
+@media screen and (max-width: 800px){
+    .finalNavBar{
+        width: 567px;
+        height: 451px;
+    }
 
+    h2{
+        font-size: 20px;
+    }
+
+    .textDesign{
+        right: 0px;
+    }
+
+    .group{
+        bottom: 32px;
+        left: 61px;
+        line-height: 0;
+        margin-bottom: -20px;
+    }
+
+    
+}
 
 
 

@@ -4,87 +4,179 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>ASG: Home Page</title>
-    <link href = "CSS for home page.css" rel = "stylesheet">
-    <link href = "CSS for parks.css" rel = "stylesheet">
-    <link href = "CSS for form.css" rel = "stylesheet">
+    <link href = "CSS/CSS for home page.css" rel = "stylesheet">
+    <link href = "CSS/CSS for parks.css" rel = "stylesheet">
+    <link href = "CSS/CSS for form.css" rel = "stylesheet">
+    <link href = "CSS/CSS for plan your visit.css" rel = "stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script src = "Javascript/Captcha.js" defer></script>
+    <script src="https://kit.fontawesome.com/6dc95d183b.js" crossorigin="anonymous"></script>
   </head>
   
   <body>
-    <nav class = "Header-buttons">
-        <span class = "circle">
-            <a style = "text-decoration: none;" href = "index.html">GW logo</a>
-        </span>
-        <div class = "PG-name-container">
-            <h1 class = "PG-name">Bird Park</h1>
-        </div>       
-        <div class = "dropdown">
-            <button class = "button">Parks + </button>
-            <div class = "dropdown-content">
-                <a href = "Zoological Park.html">Zoo</a>
-                <a href = "River Safari.html">River Safari</a>
-                <a href = "Bird Park.html">Bird Park</a>
-            </div>
-        </div>
-        <div class = "buttons">
-            <button class = "button">
-                <a class = "button" href = "Things to do.html">Activities</a>               
-            </button>           
-        </div>
-        <div class = "buttons">
-            <button class = "button">
-                <a class = "button" href = "#">Plan your visit</a> 
-            </button>
-        </div>
-        <div class = "Booking-container">
-            <button class = "Booking">
-                <a class = "Booking" href = "Booking form.html">Book Now</a> 
-            </button>
-        </div>
+    <nav>   
+        <label for = "drop" class = "toggle">MENU<i class="fas fa-bars"></i></label> 
+        <a style = "text-decoration: none;" href = "index.html">
+            <img src = "Images/GW logo.jpg" class = "circle">
+        </a>
+        <input type="checkbox" id = "drop">
+        <ul class = "nav">
+            
+        
+            <li><label for = "drop-2" class = "toggle">
+                <p>Parks<i class = "fas fa-caret-down"> </i></p></label>
+                <a href = "#">
+                    Parks<i class = "fas fa-caret-down"> </i>
+                </a>
+                <input type = "checkbox" id = "drop-2">
+                <ul>
+                    <li><a href = "Zoological Park.html">Zoological Gardens</a></li>
+                    <li><a href = "River Safari.html">River Safari</a></li>
+                    <li><a href = "Bird Park.html">Bird Park</a></li>
+                </ul>
+            </li>
+
+            <li><a href = "Things to do.html">Activities</a></li>
+            <li><a href = "Plan your visit.html">Plan Your Visit</a></li>
+            <li><a href = "Booking form.html">Book Now</a></li>
+        </ul>        
     </nav>
 
-    <form class = "form-container" action = "index.html" method = "get">
+    <form class = "form-container" action = "index.html" method = "GET">
         <div class = "forms-header">
             <h1>Head on to out wonderful parks by booking now!!!</h1>
         </div>
 
-        <div class = "form-info">
-            <label for = "name">Name (As in NRIC):</label><br>
-            <input type = "text" id="name" name="name" placeholder = "Tan Kim Kim" required><br>
+        <div class = "forms">
+            <div class = "form-info">
+                <label for = "name">Name (As in NRIC):*</label><br>
+                <input type = "text" id="name" name="name" placeholder = "Tan Kim Kim" required><br>
+                <div class = "error"></div>
 
-            <label for = "parkChoice">Select your park: </label><br>
-            <select name = "choice" id = "choice" required>
-                <option value = "test">Select your park</option>
-                <option value = "Zoological Park">Zoological Park</option>
-                <option value = "River Safari">River Safari</option>
-                <option value = "Bird Park">Bird Park</option>
-            </select><br>
+                <label for = "parkChoice">Select your park:* </label><br>
+                <select name = "choice" id = "choice" required>
+                    <option value = "test">Select your park</option>
+                    <option value = "Zoological Park">Zoological Park</option>
+                    <option value = "River Safari">River Safari</option>
+                    <option value = "Bird Park">Bird Park</option>
+                </select><br>
 
-            <label for = "Number">Contact Number: </label><br>
-            <input type = "text" id="contactNo" name="Number" placeholder = "12345678" required><br>
+                <label for = "Number">Contact Number:* </label><br>
+                <input type = "text" id="contactNo" name="Number" placeholder = "12345678" required><br>
+                <div class = "error2"></div>
 
-            <label for = "adults">Number of adults: </label><br>           
-            <input type = "text" id="adults" name="adults" placeholder = "4" required><br>
 
-            <label for = "children">Number of children: </label><br>
-            <input type = "text" id="children" name="children" placeholder = "5" required><br>
+                <label for = "adults">Number of adults:* </label><br>           
+                <input type = "text" id="adults" name="adults" placeholder = "4" required><br>
+                <div class = "error3"></div>
 
-            <label for = "elderly">Number of elderly: </label><br>
-            <input type = "text" id="elderly" name="elderly" placeholder = "6" required><br>
+                <label for = "children">Number of children:* </label><br>
+                <input type = "text" id="children" name="children" placeholder = "5" required><br>
+                <div class = "error4"></div>
 
-            <label for = "Date">Select Date:</label><br>
-            <input type = "date" id="Date" name="Date" value = "2021-12-01" min = "2021-12-01" 
-            max = "2022-02-31" required><br>
+                <label for = "elderly">Number of elderly:* </label><br>
+                <input type = "text" id="elderly" name="elderly" placeholder = "6" required><br>
+                <div class = "error5"></div>
 
-            <label for = "time">Choose your preferred time:</label><br>
-            <input type = "time" id="time" name="time" 
-            value = "10:00" min = "10:00" max = "21:00" required><br>
-            
-            <div class = "submit-container">
-                <input class = "submit-button" type = "submit" value = "Submit">
-            </div>
-            
-        </div>
+                <label for = "Date">Select Date:*</label><br>
+                <input type = "date" id="Date" name="Date" value = "2021-12-01" min = "2021-12-01" 
+                max = "2022-02-31" required><br>
+
+                <label for = "time">Choose your preferred time*:</label><br>
+                <input type = "time" id="time" name="time" 
+                value = "10:00" min = "10:00" max = "21:00" required><br>
+                
+                <div class = "captcha">
+                    <div class = "wrapper">
+                        <header>Are you a robot?</header>
+                        <div class = "captcha-area">
+                            <div class = "captcha-img">
+                                <img src = "Images/captcha.jpg">
+                                <div class = "code"></div>
+                            </div>
+                            <button class = "reload"><i class = "fas fa-redo-alt"></i></button>
+                        </div>
+                        
+                        <div>
+                            <input id = "test" maxlength = "6" type = "text" placeholder = "Enter code above" required >
+                            <button class = "check">Check</button>
+                        </div>
+                        
+                        <div class = "status"></div>                                        
+                    </div>
+                </div>
+                
+                <div class = "submit-container">
+                    <input class = "submit-button" type = "submit" value = "Submit">
+                </div> 
+            </div>               
+        </div>            
     </form>
+    
+
+
+    <nav class = "finalNavBar">
+        <div class = "group">
+            <h2>Home</h2>                       
+            <div>
+                <a class = "textDesign" href = "index.html#about">About</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "index.html#funfacts">Fun facts</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "index.html#gettingThere">How to get there?</a>
+            </div><br>  
+            <div>
+                <a class = "textDesign" href = "index.html#logistics">Opening hours</a>
+            </div><br>      
+        </div>
+        <div class = "group">
+            <h2 class = "nav-header">Parks</h2>                       
+            <div>
+                <a class = "textDesign" href = "Zoological Park.html">Zoological Gardens</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "River Safari.html">River Safari</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "Bird Park.html">Bird Park</a>
+            </div><br>        
+        </div>
+        <div class = "group">
+            <h2 class = "nav-header">Things to do</h2>                       
+            <div>
+                <a class = "textDesign" href = "Things to do.html#thingsToDo">Feeding Sessions</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "Things to do.html#tours">Tours</a>
+            </div><br>        
+        </div>
+        <div class = "group">
+            <h2 class = "nav-header">Plan Your Visit</h2>                       
+            <div>
+                <a class = "textDesign" href = "Plan your visit.html#openingHours">Our Opening Hours</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "Plan your visit.html#ticketPrices">Ticket Prices</a>
+            </div><br>   
+            <div>
+                <a class = "textDesign" href = "Plan your visit.html#memberOffers">Membership Offers</a>
+            </div><br>     
+        </div>
+        <div class = "group">
+            <h2 class = "nav-header">Connect</h2>                       
+            <div>
+                <a class = "textDesign" href = "Plan your visit.html">
+                    <img src = "IG.png">
+                    &nbsp;                   
+                    <img src = "FB.png">
+                    &nbsp;
+                    <img src = "Twitter.png">
+                </a>
+            </div><br>    
+        </div>
+    </nav>
 
     <footer class = "copyright">
         <p>

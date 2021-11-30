@@ -2,10 +2,18 @@ html{
     scroll-behavior: smooth;
 }
 
-.discover-button{
-    position: relative;
-    left: 5px;
-    bottom: 50px;
+body{
+    margin: 0;
+}
+
+
+.animate{
+    width: 100%;
+    height: 520px;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
 }
 
 .discover-button:hover .button{
@@ -48,7 +56,7 @@ html{
 }
 
 .adventure{
-    width: 1247px;
+    width: 100%;
     height: 700px;
     background-color: brown;
     display: flex;
@@ -77,14 +85,14 @@ html{
 }
 
 .iconic-header{
-    width: 1247px;
+    width: 100%;
     height: 80px;    
     display: flex;
     justify-content: center;
     background-color: bisque;
 }
 .showcase-animal{
-    width: 1247px;
+    width: 100%;
     height: 1000px;
     background-color: bisque;
     display: flex;
@@ -141,11 +149,11 @@ html{
 
 
 .double-button{
-    width: 100%;
-    height: 200px;
-    display: flex;
+    height: 120px;
     align-items: center;
-    flex-direction: column;
+    display: flex;
     justify-content: space-around;
 }
+
+
 

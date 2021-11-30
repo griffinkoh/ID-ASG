@@ -2,48 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name = "viewport" content="width=device-width">
     <title>ASG: Home page</title>
-    <link href="CSS for home page.css" rel="stylesheet">
+    <link href = "CSS/CSS for home page.css" rel="stylesheet">
+    <link href = "CSS/CSS for plan your visit.css" rel = "stylesheet"> 
+    <link href = "CSS/CSS for form.css">  
+    <script src = "https://kit.fontawesome.com/6dc95d183b.js" crossorigin="anonymous"></script>
+    <script src = "/Javascript/Home page JS.js" defer ></script>
   </head>
   <body>
-    <nav class = "Header-buttons">
-        <span class = "circle">
-            <a style = "text-decoration: none;" href = "index.html">GW logo</a>
-        </span>
-        <div class = "PG-name-container">
-            <h1 class = "PG-name">Home</h1>
-        </div>       
-        <div class = "dropdown">
-            <button class = "button">Parks + </button>
-            <div class = "dropdown-content">
-                <a href = "Zoological Park.html">Zoo</a>
-                <a href = "River Safari.html">River Safari</a>
-                <a href = "Bird Park.html">Bird Park</a>
-            </div>
-        </div>
-        <div class = "buttons">
-            <button class = "button">
-                <a class = "button" href = "Things to do.html">Activities</a>               
-            </button>           
-        </div>
-        <div class = "buttons">
-            <button class = "button">
-                <a class = "button" href = "#">Plan your visit</a> 
-            </button>
-        </div>
-        <div>
-            <button class = "Booking">
-                <a class = "Booking" href = "Booking form.html">Book Now</a> 
-            </button>
-        </div>
+      
+    <nav>   
+        <label for = "drop" class = "toggle">MENU<i class="fas fa-bars"></i></label> 
+        <a style = "text-decoration: none;" href = "index.html">
+            <img src = "Images/GW logo.jpg " class = "circle">
+        </a>
+        <input type="checkbox" id = "drop">
+        <ul class = "nav">
+            
+            <li><a href = "index.html">Home</a></li>
+            <li><label for = "drop-2" class = "toggle">
+                <p>Parks<i class = "fas fa-caret-down"> </i></p></label>
+                <a href = "#">
+                    Parks<i class = "fas fa-caret-down"> </i>
+                </a>
+                <input type = "checkbox" id = "drop-2">
+                <ul>
+                    <li><a href = "Zoological Park.html">Zoological Gardens</a></li>
+                    <li><a href = "River Safari.html">River Safari</a></li>
+                    <li><a href = "Bird Park.html">Bird Park</a></li>
+                </ul>
+            </li>
+
+            <li><a href = "Things to do.html">Activities</a></li>
+            <li><a href = "Plan your visit.html">Plan Your Visit</a></li>
+            <li><a href = "Booking form.html">Book Now</a></li>
+        </ul>        
     </nav>
 
     <div class = "img-container">
         <div class="centered">Photo</div>
     </div>
 
-    <div class = "about-page">
+    <div class = "about-page" id = "about">
         <h1 class = "about-header">What we offer?</h1>
         <p class = "about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -57,7 +58,7 @@
               euismod elementum nisi.</p>
     </div>
 
-    <div class = "fun-facts">        
+    <div class = "fun-facts" id = "funFacts">        
         <h1 class = "fun-fact-header">Fun Facts!!</h1>
         <ul class = "fun-fact-text">
             <li class = "circle2">Lorem Ipsum</li>
@@ -79,7 +80,7 @@
         </ul>
     </div>
 
-    <div class = "getting-there">
+    <div class = "getting-there" id = "gettingThere">
         <h1 class = "fun-fact-header">How to get there?</h1>
         <ul class = "fun-fact-text">
             <li class = "circle3">Train</li>
@@ -97,13 +98,76 @@
         </ul>
     </div>
 
-    <div class = "logistics">
+    <div class = "logistics" id = "logistics">
         <ul class = "logistics-info">
             <li><strong>Opening Hours:</strong> 10am to 9pm daily</li>
             <li><strong>Address:</strong> 252 Glory St, 234679</li>
             <li><strong>Connections:</strong> Facebook, Instagram, Twitter</li>
         </ul>
     </div>
+
+    <nav class = "finalNavBar">
+        <div class = "group">
+            <h2>Home</h2>                       
+            <div>
+                <a class = "textDesign" href = "index.html#about">About</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "index.html#funfacts">Fun facts</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "index.html#gettingThere">How to get there?</a>
+            </div><br>  
+            <div>
+                <a class = "textDesign" href = "index.html#logistics">Opening hours</a>
+            </div><br>      
+        </div>
+        <div class = "group">
+            <h2 class = "nav-header">Parks</h2>                       
+            <div>
+                <a class = "textDesign" href = "Zoological Park.html">Zoological Gardens</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "River Safari.html">River Safari</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "Bird Park.html">Bird Park</a>
+            </div><br>        
+        </div>
+        <div class = "group">
+            <h2 class = "nav-header">Things to do</h2>                       
+            <div>
+                <a class = "textDesign" href = "Things to do.html#thingsToDo">Feeding Sessions</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "Things to do.html#tours">Tours</a>
+            </div><br>        
+        </div>
+        <div class = "group">
+            <h2 class = "nav-header">Plan Your Visit</h2>                       
+            <div>
+                <a class = "textDesign" href = "Plan your visit.html#openingHours">Our Opening Hours</a>
+            </div><br>
+            <div>
+                <a class = "textDesign" href = "Plan your visit.html#ticketPrices">Ticket Prices</a>
+            </div><br>   
+            <div>
+                <a class = "textDesign" href = "Plan your visit.html#memberOffers">Membership Offers</a>
+            </div><br>     
+        </div>
+        <div class = "group">
+            <h2 class = "nav-header">Connect</h2>                       
+            <div>
+                <a class = "textDesign" href = "Plan your visit.html">
+                    <img src = "Images/IG.png">
+                    &nbsp;                   
+                    <img src = "Images/FB.png">
+                    &nbsp;
+                    <img src = "Images/Twitter.png">
+                </a>
+            </div><br>    
+        </div>
+    </nav>
 
     <footer class = "copyright">
         <p>

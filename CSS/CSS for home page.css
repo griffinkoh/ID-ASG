@@ -333,7 +333,7 @@ nav ul ul ul li{
     }
     nav{
         height: 45px;
-        width:534px;
+        width: 567px;
     }
     .toggle + a, .nav{
         display: none;
@@ -402,11 +402,11 @@ nav ul ul ul li{
     }
 
     .img-container, .about-page {
-        width: 534px;
+        width: 567px;
     }
 
     .fun-facts{
-        width: 534px;
+        width: 567px;
         height: 1890px;
     }
 
@@ -432,8 +432,33 @@ nav ul ul ul li{
     }
 
     .getting-there{
-        width: 534px;
+        width: 567px;
+        height: 1034px;
     }
 
+    .circle3{
+        margin: 50px;
+    }
     
+    .Train-container{
+        left: 148px;
+        bottom: 701px;
+    }
+
+    .Bus-container{
+        bottom: 399px;
+    }
+
+    .Walk-container{
+        left: -205px;
+        bottom: 102px;
+    }
+
+    .logistics{
+        width: 567px;
+    }
+
+    .copyright{
+        width: 576px;
+    }
 }

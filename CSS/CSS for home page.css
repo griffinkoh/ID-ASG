@@ -319,7 +319,7 @@ nav ul ul ul li{
     font-size: 15px;
 }
 
-@media screen and (max-width: 468px){
+@media screen and (max-width: 800px){
     nav a {
         display: block;
         padding: 20px 225px;
@@ -458,7 +458,8 @@ nav ul ul ul li{
         width: 567px;
     }
 
+
     .copyright{
-        width: 576px;
+        width: 567px;
     }
 }

@@ -10,14 +10,11 @@ body{
 .circle{
     height:113px;
     width: 113px;
-    margin: 8px;
     background-color: yellow;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: 10px;
 }
 
 
@@ -30,6 +27,9 @@ nav{
     padding: 0;
     background-color: #041b40;
     height: 128px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav:after{
@@ -40,11 +40,10 @@ nav:after{
 
 nav ul{
     float: right;
-    padding: 0;
-    margin: 0;
+    padding-right: 95px;
     list-style: none;
     position: relative;
-    bottom: 112px;
+    bottom: 100px;
     right: 45px;
 }
 
@@ -57,7 +56,7 @@ nav ul li{
 
 nav a{
     display: block;
-    padding: 12px 65px;
+    padding: 7.5px 36px;
     color: #fff;
     font-size: 14px;
     text-decoration: none;
@@ -96,7 +95,7 @@ nav a:hover{
 nav ul ul{
     display: none;
     position: absolute;
-    top: 55px;
+    top: 46px;
 }
 
 nav ul li:hover > ul{
@@ -108,20 +107,22 @@ nav ul ul li{
     float: none;
     display: list-item;
     position: relative;
-    right: 487px;
+    right: 312px;
     background: blue;
     z-index: 1;
 }
 
 .button{
     border-radius: 10px;
-    padding: 18px;
+    padding: 16px;
     background-color: green;
     text-decoration: none;
     border: none;
-    position: relative;
-    left: 45%;
-    top: 85%
+    position: absolute;
+    left: 50%;
+    bottom: 55px;
+    display: flex;
+    justify-content: center;
 }
 
 .bottomButton{
@@ -154,8 +155,13 @@ nav ul ul ul li{
 
 .img-container{
     width: 100%;
-    height: 510px;
+    height: 520px;
     background-color: blue;
+}
+
+.img-fit{
+    width:100%;
+    height: 520px;
 }
 
 .about-page{
@@ -317,12 +323,17 @@ nav ul ul ul li{
     display: flex;
     background-color: lightpink;
     font-size: 15px;
+    text-align: center;
+}
+
+div a:hover{
+    color: blue;
 }
 
 @media screen and (max-width: 800px){
     nav a {
         display: block;
-        padding: 20px 225px;
+        padding: 20px 218px;
         color: #fff;
         font-size: 14px;
         text-decoration: none;
@@ -333,7 +344,7 @@ nav ul ul ul li{
     }
     nav{
         height: 45px;
-        width: 567px;
+        width: 569px;
     }
     .toggle + a, .nav{
         display: none;
@@ -350,12 +361,11 @@ nav ul ul ul li{
         text-decoration: none;
         border: none;
     }
-    .toggle:hover{
-        background-color: #020d1e;
-    }
 
     [id ^= drop]:checked + ul{
         display: block;
+        bottom: 18px;
+        height: 16px;
     }
     nav ul{
         bottom: 0px;
@@ -363,6 +373,8 @@ nav ul ul ul li{
     }
     nav ul li{
         display: block;
+        position: relative;
+        left: 95px;
     }
     nav ul li .toggle, nav ul ul a{
         padding: 20px 40px;
@@ -392,10 +404,7 @@ nav ul ul ul li{
         display: none;
     }
     nav ul ul li{
-        display: block;
-        width: 100%;
-        position: relative;
-        right: 0px
+        bottom: -9px;
     }
     nav ul ul ul li{
         position: static;
@@ -404,9 +413,9 @@ nav ul ul ul li{
     .img-container, .about-page {
         width: 567px;
     }
-
+    
     .fun-facts{
-        width: 567px;
+        width: 569px;
         height: 1890px;
     }
 
@@ -432,7 +441,7 @@ nav ul ul ul li{
     }
 
     .getting-there{
-        width: 567px;
+        width: 569px;
         height: 1034px;
     }
 
@@ -455,14 +464,21 @@ nav ul ul ul li{
     }
 
     .logistics{
-        width: 567px;
+        width: 569px;
     }
 
 
     .copyright{
-        width: 567px;
+        width: 569px;
         height: 180px;
         text-align: center;
         align-items: center;
+    }
+
+    .button{
+        top: 218px;
+        bottom: auto;
+        left: 43%;
+        padding: 10px;
     }
 }

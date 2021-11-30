@@ -1,4 +1,4 @@
-const slideshowImages = document.querySelectorAll(".img-container .animate");
+const slideshowImages = document.querySelectorAll(".slideshowContainer .animate");
 
 const nextImageTime = 3000;
 let imageCounter = 0;

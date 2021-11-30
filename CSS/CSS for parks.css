@@ -6,12 +6,13 @@ body{
     margin: 0;
 }
 
-
-.animate{
+.slideshowContainer{
     width: 100%;
     height: 520px;
+}
+
+.animate{
     position: absolute;
-    object-fit: cover;
     opacity: 0;
     transition: opacity 2s ease-in-out;
 }
@@ -74,7 +75,6 @@ body{
 .events{
     width: 250px;
     height: 350px;
-    margin: 30px;
     background-color: cornsilk;
     font-size: 30px; 
     margin: 65px;
@@ -155,5 +155,50 @@ body{
     justify-content: space-around;
 }
 
+@media screen and (max-width: 800px){
+    .animate{
+        height: 220px;
+        width: 569px;
+    }
+    .slideshowContainer{
+        height: 221px;
+    }
+    .RiverInfo{
+        width: 559px;
+        padding-left: 10px;
+    }
+    .about{
+        width: 172px;
+        bottom: 41px;
+        font-size: 10px;
+    }
+    .info{
+        font-size: 15px;
+        bottom: 25px;
+    }
+    .adventure{
+        height: 1543px;
+        width: 569px;
+    }
+    .adventure-container{
+        justify-content: center;
+        padding-right: 21px;
+    }
+    .iconic-header{
+        width: 569px;
+    }
+    .showcase-animal{
+        width: 569px;
+        height: 1048px;
+    }
+
+    .display-container{
+        width: 180px;
+        height: 180px;
+    }
+    .double-button{
+        width: 569px;
+    }
+}
 
 

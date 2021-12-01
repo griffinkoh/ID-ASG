@@ -404,7 +404,7 @@ div a:hover{
         display: none;
     }
     nav ul ul li{
-        bottom: -9px;
+        bottom: 2px;
     }
     nav ul ul ul li{
         position: static;

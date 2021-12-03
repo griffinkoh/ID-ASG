@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 /*Home page*/
 html{
     scroll-behavior: smooth;
@@ -64,7 +66,7 @@ nav a{
 }
 
 nav ul li:hover{
-    background: #FAF6D4;
+    background: #6a747b;
 }
 
 .icon{
@@ -88,7 +90,7 @@ nav ul li:hover{
 }
 
 nav a:hover{
-    background: #FAF6D4;
+    background: #6a747b;
 }
 
 nav ul ul{
@@ -107,7 +109,7 @@ nav ul ul li{
     display: list-item;
     position: relative;
     right: 391px;
-    background: #f1e688;
+    background: #51585e;
     z-index: 1;
 }
 
@@ -166,7 +168,7 @@ nav ul ul ul li{
 .about-page{
     width: 100%;
     height: 400px;
-    background-color: #7FFED3;
+    background-color: #a7dddf;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -183,12 +185,14 @@ nav ul ul ul li{
     bottom: 50px;
     margin: 100px;
     text-align: center;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .fun-facts{
     width: 100%;
     height: 800px;
-    background-color: beige;
+    background-image: url(Images/Grass.png); 
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -222,34 +226,36 @@ nav ul ul ul li{
 }
 
 .circle-text{
-    color: blue;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-between; 
     text-align: center;
     margin: 130px;
-    margin-right: 130px;
+    margin-right: 117px;
     position: relative;
     bottom: 480px;
     right: 20px;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .circle-text2{
-    color: blue;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-between; 
     text-align: center;
     margin: 130px;
-    margin-right: 155px;
+    margin-right: 114px;
     position: relative;
     bottom: 490px;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .getting-there{
     width: 100%;
-    height: 500px;
-    background-color: orange;
+    height: 521px;
+    background-color: #FAF6D4;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -279,6 +285,7 @@ nav ul ul ul li{
     position: relative;
     right: 250px;
     bottom: 140px;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .Bus-container{
@@ -287,6 +294,7 @@ nav ul ul ul li{
     position: relative;
     bottom: 140px;
     right: 30px;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .Walk-container{
@@ -299,12 +307,13 @@ nav ul ul ul li{
     position: relative;
     bottom: 140px;
     left: 205px;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .logistics{
     width: 100%;
     height: 200px;
-    background-color: paleturquoise;
+    background-color: black;
     display: flex;
     line-height: 50px;   
 }
@@ -313,14 +322,17 @@ nav ul ul ul li{
     font-size: 20px;
     list-style: none;
     position: relative;
-    left: 50px;
+    left: 8px;
+    color: white;
+    font-family: 'Architects Daughter', cursive;;
 }
 
 .copyright{
     width: 100%;
     height: 75px;
     display: flex;
-    background-color: lightpink;
+    color: white;
+    background-color: black;
     font-size: 15px;
     text-align: center;
 }
@@ -332,14 +344,13 @@ div a:hover{
 @media screen and (max-width: 800px){
     nav a {
         display: block;
-        padding: 20px 218px;
-        color: #fff;
+        padding: 20px 309px;
+        color: #CED2D5;
+        background-color: #6a747b;
         font-size: 14px;
         text-decoration: none;
         line-height: 32px;
         width: 200px;
-        position: relative;
-        right: 90px;
     }
     nav{
         height: 45px;
@@ -349,22 +360,23 @@ div a:hover{
         display: none;
     }
     .toggle p{
-        margin-left: 96px;
+        margin-left: 276px;
     }
     .toggle{
         display: block;
-        background-color: #041b40;
         padding: 14px 20px;
-        color: #fff;
+        color: #CED2D5;
+        background-color: #231F20;
         font-size: 14px;
         text-decoration: none;
         border: none;
     }
 
+
     [id ^= drop]:checked + ul{
         display: block;
         bottom: 18px;
-        height: 16px;
+        height: 32px;
     }
     nav ul{
         bottom: 0px;
@@ -377,21 +389,20 @@ div a:hover{
     }
     nav ul li .toggle, nav ul ul a{
         padding: 20px 40px;
+        background-color: #6a747b;
     }
     nav ul ul .toggle nav ul ul a{
         padding: 0 80px;
     }
     nav a:hover, nav ul ul ul{
-        background-color: #020d1e;
+        background-color: #6a747b;
     }
     nav ul li ul li .toggle, nav ul ul a, nav ul ul ul a{
-        padding: 14px 220px;
-        position: relative;
-        right: 0;
-        color: #fff;
+        padding: 14px 253px;       
+        color: #CED2D5;
     }
     nav ul li li .toggle, nav ul ul a{
-        background-color: #073986;
+        background-color: #51585e;
         padding-left: 229px;
     }
     nav ul ul{
@@ -402,15 +413,16 @@ div a:hover{
     nav ul li li:hover > ul, nav ul li:hover > ul{
         display: none;
     }
-    nav ul ul li{
-        bottom: 2px;
-    }
     nav ul ul ul li{
         position: static;
     }
 
     .img-container, .about-page {
         width: 569px;
+    }
+
+    .about-header{
+        top: 16px;
     }
     
     .fun-facts{
@@ -441,16 +453,16 @@ div a:hover{
 
     .getting-there{
         width: 569px;
-        height: 1034px;
+        height: 1081px;
     }
 
     .circle3{
-        margin: 50px;
+        margin: 55px;
     }
     
     .Train-container{
         left: 148px;
-        bottom: 701px;
+        bottom: 724px;
     }
 
     .Bus-container{
@@ -544,7 +556,7 @@ body{
 .adventure{
     width: 100%;
     height: 700px;
-    background-color: brown;
+    background-color: aqua;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -955,7 +967,8 @@ html{
 .finalNavBar{
     width: 100%;
     height: 300px;
-    background-color: yellow;
+    color: white;
+    background-color: black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -975,7 +988,7 @@ html{
 
 .textDesign{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0;
 }
 

@@ -632,7 +632,7 @@ body{
     height: 80px;    
     display: flex;
     justify-content: center;
-    background-color: bisque;
+    background-color: #FAF6D4;
 }
 .showcase-animal{
     width: 100%;
@@ -706,7 +706,7 @@ body{
 
 @media screen and (max-width: 800px){
     .animate{
-        height: 220px;
+        height: 222px;
         width: 569px;
     }
     .slideshowContainer{
@@ -957,7 +957,7 @@ select{
 
 @media screen and (max-width: 569px){
     .forms-header{
-        font-size: 12px;
+        font-size: 9px;
         position: relative;
         top: 23px;
     }
@@ -979,7 +979,7 @@ html{
 .Plan-Visit{
     width: 100%;
     height: auto;
-    background-color: wheat;
+    background-color: #FAF6D4;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1092,6 +1092,8 @@ html{
         width: 117px;
         height: 37px;
         text-align: center;
+        font-size: 15px;
+        border-width: 1px;
     }
     .Name{
         left: 40px;
@@ -1144,7 +1146,6 @@ html{
     display: flex;
     width: 500px;
     height: 450px;
-    background-color: yellow;   
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     display: flex;
@@ -1167,10 +1168,6 @@ html{
 .Tours-container{
     display: flex;
     position: relative;
-    margin-right: 186px;
-    list-style: none;
-    left: 92px;
-    bottom: 137px;
     font-family: 'Karla', sans-serif;
     margin-right: 186px;
     list-style: none;
@@ -1192,6 +1189,8 @@ html{
     display: flex;
     position: absolute;
     top: 1246px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 
@@ -1217,13 +1216,21 @@ html{
         width: 171px;
         height: 94px;
         position:absolute;
-        top: 392px;
+        top: 691px;
+        border-top-left-radius: 10px; 
+        border-top-right-radius: 10px;
     }
     .imageSizeTop{
         width: 171px;
         height: 94px;
         position:absolute;
-        top: 691px;
+        top: 394px;
+        border-top-left-radius: 10px; 
+        border-top-right-radius: 10px;
+    }
+    .Tours-container{
+        bottom: 716px;
+        margin-bottom: 243px;
     }
     .Tours{
         margin-bottom: 248px;

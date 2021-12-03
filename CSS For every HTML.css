@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
 
 /*Home page*/
 html{
@@ -116,7 +118,8 @@ nav ul ul li{
 .button{
     border-radius: 10px;
     padding: 16px;
-    background-color: green;
+    background-color: #2CD38D;
+    color:#1F61E0;
     text-decoration: none;
     border: none;
     position: absolute;
@@ -129,7 +132,8 @@ nav ul ul li{
 .bottomButton{
     border-radius: 10px;
     padding: 18px;
-    background-color: green;
+    background-color: #2CD38D;
+    color: #1F61E0;
     text-decoration: none;
     
 }
@@ -200,7 +204,7 @@ nav ul ul ul li{
 
 .fun-fact-header{
     position: relative;
-    top: 40px;
+    top: 24px;
 }
 
 .circle2{
@@ -499,6 +503,10 @@ html{
     scroll-behavior: smooth;
 }
 
+h1{
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
 body{
     margin: 0;
 }
@@ -555,11 +563,12 @@ body{
 
 .adventure{
     width: 100%;
-    height: 700px;
+    height: 577px;
     background-color: aqua;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    position: absolute;
 }
 
 .adventure-container{
@@ -579,6 +588,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.parks-header{
+    position: relative;
+    top: 35px;
+    left: 319px;
 }
 
 .iconic-header{
@@ -650,6 +665,7 @@ body{
     align-items: center;
     display: flex;
     justify-content: space-around;
+    background-color: bisque;
 }
 
 @media screen and (max-width: 800px){
@@ -674,12 +690,18 @@ body{
         bottom: 25px;
     }
     .adventure{
-        height: 1543px;
+        height: 1560px;
         width: 569px;
+    }
+    .fun-fact-header{
+        text-align: center;
+        left: 71px;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 25px;
     }
     .adventure-container{
         justify-content: center;
-        padding-right: 21px;
+        left: 39px;
     }
     .iconic-header{
         width: 569px;

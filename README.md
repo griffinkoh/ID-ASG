@@ -46,10 +46,8 @@ Another feature idea
 Technologies Used
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
-Testing
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+Javascript
+I used JS to implement features like captcha, slideshow animation and error checking for the forms. I did captcha as I feel that it would be of great use 
 
 Contact form:
 Go to the "Contact Us" page

@@ -110,7 +110,7 @@ submit.addEventListener("click", e =>{
     }
 
     if(elderly.value.length == 0){
-        error5.innerText = "Please fill in the number of children going"
+        error5.innerText = "Please fill in the number of elderly going"
         error5.style.color = "red"
     }    
     else if (isNaN(elderly.value)){
